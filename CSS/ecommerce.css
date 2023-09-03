@@ -1,0 +1,17 @@
+
+.nav-item{
+    padding-right: 20px;
+}
+#navbarNav{
+    margin-left: 1200px;
+}
+.carousel slide{
+    width: 50%;
+}
+.carousel{
+    width: 400px;
+    margin-left: 130px;
+}
+.para{
+    text-align: justify;
+}

@@ -5,3 +5,26 @@
     margin-left: 20px;
     margin-top: 20px;
 }
+
+.card-custom{
+    position: relative;
+    left: 30px;
+}
+
+.slide{
+    width: 500px;
+    margin-left: 200px;
+}
+
+.stickyTest{
+    width: 400px;
+    height: 100px;
+    background-color: blueviolet;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
