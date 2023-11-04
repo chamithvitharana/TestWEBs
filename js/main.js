@@ -36,3 +36,25 @@ function getsubjectData(){
     document.getElementById("avgMarks").innerHTML= avgMarks;
 
 }
+
+var sub1  = 44;
+var sub2  = 20;
+var sub3  = 34;
+
+var avg = (sub1 + sub2 + sub3)/3 ;
+
+if(avg >= 75){
+    alert("A");
+}else if(avg >= 65){
+    alert("B");
+}else if(avg >= 55){
+    alert("C");
+}else if(avg >= 35){
+    alert("S");
+}else{
+    alert("W");
+}
+
+
+
+console.log(avg);
