@@ -17,5 +17,5 @@ function getdata(){
 }
 
 function testGit(){
-    
+   var ex = 10; 
 }
