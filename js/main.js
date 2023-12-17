@@ -15,3 +15,7 @@ function getdata(){
     document.getElementById("result").innerHTML=email;
 
 }
+
+function testGit(){
+    
+}
