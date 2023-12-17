@@ -43,18 +43,45 @@ var sub3  = 34;
 
 var avg = (sub1 + sub2 + sub3)/3 ;
 
-if(avg >= 75){
-    alert("A");
-}else if(avg >= 65){
-    alert("B");
-}else if(avg >= 55){
-    alert("C");
-}else if(avg >= 35){
-    alert("S");
-}else{
-    alert("W");
+// if(avg >= 75){
+//     alert("A");
+// }else if(avg >= 65){
+//     alert("B");
+// }else if(avg >= 55){
+//     alert("C");
+// }else if(avg >= 35){
+//     alert("S");
+// }else{
+//     alert("W");
+// }
+
+
+
+// console.log(avg);
+
+// loops
+for(var i =0; i<10; i++){
+    console.log("Hello Chamith");
 }
 
 
+console.log(num);
 
-console.log(avg);
+function clearInputs(){
+    document.getElementById("num").innerHTML="";
+}
+
+function getNumValue(){
+    const num = document.getElementById("num");
+    console.log(num);
+}
+
+var isMarried =true;
+var count = 3;
+while(isMarried){
+    console.log("Hii");
+    count--;
+    if(count==0){
+        isMarried= false;
+    }
+}
