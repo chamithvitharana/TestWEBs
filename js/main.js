@@ -87,3 +87,76 @@ while(isMarried){
     }
 
 }
+
+var cars = ["Toyota","BMW","Jeep","Benz"];
+//console.log(cars);
+//of , in
+for(var val of cars){
+}
+console.log(val);
+
+
+
+//    test 01
+var rainData = [34,65.7,65.3,23.5,78.9,98.78];
+var sum = 0;
+
+for(var i = 0; i<rainData.length; i++){
+    sum+=rainData[i];
+}
+var avgRainData = sum / rainData.length;
+console.log(avgRainData);
+
+function getNameValue(){
+    var names =  document.getElementById("getName").value;
+    var upperName = names.toUpperCase();
+
+    for(var i =0; i < names.length; i++){
+        var finalResult = upperName;
+        console.log(finalResult.charAt(i));
+        //console.log(upperName.charAt(j));    
+
+        //console.log(upperName.charAt(i[0]));
+    }
+}
+
+// JSON object  (frontend to backend for data transfer)
+// {
+//     "name" : "chamith",
+//     "address" : "Matara",
+//     "age" : "25"
+// }
+
+//variable types
+
+//var,let,const
+ // var is  global(can access any all places )
+
+
+var val1 = 85;
+val1 = 90;
+
+//const vala re initialize krnna ba
+const val2 = 25;
+val2 = 45;
+
+///////////////////////////////////////////////////////////
+function savePost(){
+    var id = document.getElementById("id").value;
+    var fname = document.getElementById("fName").value;
+    var lname = document.getElementById("lName").value;
+    // console.log(fname);
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+    method: 'POST',
+    body: JSON.stringify({
+        title: fname,
+        body: lname,
+        userId: id,
+    }),
+    headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+    },
+})  
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+}
