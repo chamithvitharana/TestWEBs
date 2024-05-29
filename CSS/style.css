@@ -1,4 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Remove list styles (bullets/numbers)
+  in case you use it with normalize.css
+*/
+ol, ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+} 
+
 *{
   margin: 0;
   padding: 0;
@@ -128,4 +166,123 @@ form .signup-link a{
 form .pass-link a:hover,
 form .signup-link a:hover{
   text-decoration: underline;
+}
+
+/* h1{
+  color: #000;
+  background-color: aqua;
+  text-align: justify right;
+} */
+#sample01{
+  font-size: 200px;
+}
+
+/* p{
+  text-align: justify center;
+  line-height: 30px;
+  /*border: 10px solid red;*/
+  border-radius: 20px;
+  padding: 100px 50px 50px 50px;
+  margin: 0px 0px 0px 0px;
+} */
+
+body{
+ /* background-color: #999999;*/
+  background-image: url(../img/backgroundImg.jpg);
+  background-size: cover;
+  background-position:  center;
+}
+
+b{
+  font-weight: 800;
+  color: #f2f2f2;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section01{
+  /*background-color: #c850c0;*/
+  display: flex;
+  
+}
+.section02{
+  background-color: #999999;
+}
+
+.profileImg{
+  float: left;
+  margin:120px 20px 0px 50px;
+  border-radius: 10px;
+
+}
+
+.profileImg1{
+  float: left;
+  margin:120px 20px 0px 50px;
+  border-radius: 10px;
+
+}
+
+.profileImg2{
+  float: left;
+  margin:120px 20px 0px 50px;
+  border-radius: 10px;
+
+}
+
+.profileImg3{
+  float: left;
+  margin:120px 20px 0px 50px;
+  border-radius: 10px;
+
+}
+
+#submit1{
+  background-color: burlywood;
+  border-radius: 10px;
+  padding: 0 20px; 
+  /*top right bottom left */
+  margin: 0px 5px 30px 40px;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+#submit1:hover{
+  cursor: pointer !important;
+  background-color: greenyellow !important;
+}
+#deletebtn{
+  background-color: red !important;
+  color: white !important;
+  border-radius: 10px !important;
+  padding: 0 10px;
+  font-weight: bold !important;
+}
+#deletebtn:hover{
+  cursor: pointer;
+  background-color: lightcoral !important;
+}
+
+.card01{
+  background-color: #4158d0;
+  border-radius: 10px;
+  border: 1px solid red !important;
+  margin: 20px;
+  box-shadow: 10px 10px;
+} 
+#box1{
+   border: 1px solid red !important;
+   height: 300px;
+   width: 300px;
+   background-color: #999999;
+   position: sticky;
+   top: 100px;
+   left: 100px;
+}
+
+#box2{
+  border: 1px solid red !important;
+  height: 200px;
+  width: 200px;
+  background-color: #c850c0;
 }
